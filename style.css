@@ -157,6 +157,7 @@ h2 span {
     border: 2px solid #06425c;
     border-radius: 10px;
     transition: 0.3s;
+    cursor: pointer;
 }
 
 .work-content i {
@@ -205,6 +206,14 @@ h2 span {
         right: 0;
     }
 
+    h2 {
+        font-size: 1.25rem;
+    }
+
+    h3 {
+        font-size: 1.1rem;
+    }
+
     .about-wrapper {
         flex-direction: column;
         text-align: center;
@@ -216,5 +225,13 @@ h2 span {
 
     .about-left {
         margin-bottom: 2.5rem;
+    }
+
+    .work-content {
+        width: calc(40% - 1rem);
+    }
+
+    .work-content {
+        font-size: 0.825rem;
     }
 }
