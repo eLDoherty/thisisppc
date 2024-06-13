@@ -234,7 +234,7 @@ h2 span {
 
 /* Testimonials */
 
-.testimonials h2, .testimonials p {
+.testimonials h2, .testimonials .desc {
     text-align: center;
     margin-bottom: 2.5rem;
 }
@@ -277,8 +277,44 @@ h2 span {
 }
 
 /* Slider */
+/* Silent is golden */
 
+/* Footer */
+footer {
+    background-color: #06425c;
+    padding-top: 3.5rem;
+}
 
+.footer-wrapper {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.footer-left, .footer-right {
+    margin: 0 2rem;
+}
+
+.footer-wrapper h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.footer-wrapper a {
+    color: white;
+}
+.credit {
+    padding: 1rem;
+    color: white;
+    border-top: 1px white solid;
+    text-align: center;
+}
+
+.footer-wrapper p {
+    margin-bottom: 1rem;
+}
 
 @media (max-width: 768px) {
     .menu {
