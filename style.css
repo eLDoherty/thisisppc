@@ -375,4 +375,12 @@ footer {
     .case-content {
         width: calc(100% - 1rem);
     }
+
+    .footer-wrapper {
+        flex-direction: column;
+    }
+
+    .footer-left {
+        margin-bottom: 1.5rem;
+    }
 }
