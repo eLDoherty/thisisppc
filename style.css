@@ -14,9 +14,10 @@ header {
     height: 80px;
 }
 
-section {
-    margin-bottom: 3.5rem;
+h2 {
+    font-size: 2.5rem;
 }
+
 .container {
     max-width: 1280px;
     padding: 0 20px;
@@ -90,7 +91,7 @@ section {
     width: calc(33%);
     display: flex;
     align-items: center;
-    background-color: #dbdbdb;
+    background-color: #3ec0a161;
     justify-content: center;
     transition: 0.3s;
     border-radius: 10px;
@@ -110,10 +111,11 @@ h2 span {
 }
 
 /* About */
-
 .about {
-    background-color: #06425c26;
+    background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+    animation: gradientBG 15s ease infinite;
     padding: 5rem 0;
+    margin-top: 3rem;
 }
 
 .about-wrapper {
@@ -133,9 +135,8 @@ h2 span {
 }
 
 /* Work */
-
 .work {
-    
+    padding: 3rem 0;
 }
 
 .work h2 {
@@ -183,9 +184,10 @@ h2 span {
     color: white;
 }
 
-/* CASE */
+/* Case */
 .case {
-    background-color: #a33e2f30;
+    background: linear-gradient(135deg, #43cea2 0%, #185a9d 100%);
+    animation: gradientBG 15s ease infinite;
     padding: 4rem 0;
 }
 
@@ -197,6 +199,8 @@ h2 span {
 .case p {
     text-align: center;
     margin-bottom: 2.5rem;
+    color: aliceblue;
+    font-size: 1.2rem;
 }
 
 .case-wrapper {
@@ -223,7 +227,7 @@ h2 span {
 
 .case .list {
     margin-bottom: 1.5rem;
-    background-color: #a33e2f;
+    background-color: #333;
     color: white;
     padding: 1rem;
     display: flex;
@@ -233,6 +237,9 @@ h2 span {
 }
 
 /* Testimonials */
+.testimonials {
+    padding: 4rem 0;
+}
 
 .testimonials h2, .testimonials .desc {
     text-align: center;
@@ -276,8 +283,40 @@ h2 span {
     margin-top: 1rem;
 }
 
-/* Slider */
-/* Silent is golden */
+/* CTA */
+.cta {
+    background: linear-gradient(135deg, #ffafbd 0%, #ffc3a0 100%);
+    animation: gradientBG 15s ease infinite;
+    padding: 5rem 0;
+}
+
+.cta-wrapper {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cta-wrapper h3 {
+    margin-bottom: 2rem;
+    color: white;
+    font-size: 2rem;
+}
+
+.cta-wrapper a {
+    padding: 10px 20px;
+    text-decoration: none;
+    border: 2px solid white;
+    color: white;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+.cta-wrapper a:hover {
+    background-color: #06425c;
+    border: 2px solid #06425c;
+}
 
 /* Footer */
 footer {
@@ -305,6 +344,7 @@ footer {
 .footer-wrapper a {
     color: white;
 }
+
 .credit {
     padding: 1rem;
     color: white;
@@ -316,19 +356,23 @@ footer {
     margin-bottom: 1rem;
 }
 
+/* Media Queries */
 @media (max-width: 768px) {
     .menu {
         display: none;
         flex-direction: column;
         gap: 0;
     }
+
     .menu-item {
         padding: 1rem;
         border-top: 1px solid white;
     }
+
     .hamburger {
         display: flex;
     }
+
     .menu.active {
         background-color: #a33e2f;
         display: flex;
@@ -382,5 +426,18 @@ footer {
 
     .footer-left {
         margin-bottom: 1.5rem;
+    }
+}
+
+/* Gradient Animation */
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
     }
 }
