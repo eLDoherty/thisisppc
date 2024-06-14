@@ -12,4 +12,6 @@ $(document).ready(function() {
         autoplay: true,
         utoplaySpeed: 1000,
     });
+
+    AOS.init();
 });
