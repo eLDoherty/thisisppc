@@ -14,4 +14,15 @@ $(document).ready(function() {
     });
 
     AOS.init();
+
+    $(".cta-button").on("click", function(e){
+        e.preventDefault();
+        $(".modal-popups").fadeToggle();
+    });
+
+    $(".close-popups").on("click", function(e){
+        e.preventDefault();
+        $(".modal-popups").fadeToggle();
+    });
+
 });

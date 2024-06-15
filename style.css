@@ -22,6 +22,16 @@ h2 {
     font-size: 2.5rem;
 }
 
+p a {
+    color: #38b0a1;
+    text-decoration: none;
+}
+
+p a:hover {
+    color: #a33e2f;
+    text-decoration: underline;
+}
+
 .container {
     max-width: 1280px;
     padding: 0 20px;
@@ -285,6 +295,7 @@ h2 span {
 
 .stars {
     margin-top: 1rem;
+    color: #ffc107;
 }
 
 /* CTA */
@@ -320,6 +331,88 @@ h2 span {
 .cta-wrapper a:hover {
     background-color: #06425c;
     border: 2px solid #06425c;
+}
+
+/* Popups */
+.modal-popups {
+    position: fixed;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 40%;
+    background: linear-gradient(135deg, #43cea2 0%, #185a9d 100%);
+    animation: gradientBG 15s ease infinite;
+    max-width: 600px;
+    padding: 4rem 3rem;
+    border: 5px solid black;
+    border-radius: 10px;
+    width: 60%;
+    display: none;
+}
+
+.modal-popups h2 {
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.modal-popups form {
+    display: flex;
+    flex-direction: column;
+}
+
+.popups-form input, textarea, .submit-button {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+    font-family: "Lexend", sans-serif;
+}
+
+.popups-form input:focus, textarea:focus {
+    border-color: #007BFF;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.popups-form textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.popups-form .submit-button {
+    padding: 10px 20px;
+    text-decoration: none;
+    border: 2px solid white;
+    color: white;
+    transition: 0.3s;
+    border-radius: 5px;
+    font-family: "Lexend", sans-serif;
+    background-color: transparent;
+    max-width: 250px;
+    margin: 0 auto;
+}
+
+.popups-form .submit-button:hover {
+    background-color: #0056b3;
+    border: 2px solid #0056b3;
+}
+
+.close-popups {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: white;
+    color: red;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
 }
 
 /* Footer */
